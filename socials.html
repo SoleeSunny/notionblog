@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <!-- Auther: Shorouk Abdelaziz  https://shorouk.dev -->
 
 <html lang="en">
@@ -32,7 +31,7 @@
 
     .icon {
       /* Change the icon size here */
-      font-size: 1em;
+      font-size: 2em;
       /* Change the icons colours here*/
       color: #7a7a7a
     }
@@ -59,7 +58,7 @@
     }
 
     .twitter:hover {
-      color: #26a7de;
+      color: #222325;
     }
 
     .reddit:hover {
@@ -82,8 +81,20 @@
       color: #2AABEE;
     }
     
-        .twitch:hover {
+    .twitch:hover {
       color: #6441a5;
+    }
+
+    .discord:hover {
+      color: #5865f2;
+    }
+
+    .github:hover {
+      color: #24292e;
+    }
+
+    .bluesky:hover {
+      color: #74C0FC;
     }
 
     .social {
@@ -103,7 +114,7 @@
 
       <!-- Start twitter Icon -->
       <div id="twitter" onclick="navigate(this.id)" class="social">
-        <span class="icon twitter"><i class="fab fa-twitter"></i></span>
+        <span class="icon twitter"><i class="fa-brands fa-x-twitter"></i></span>
       </div>
       <!-- End twitter Icon -->
 
@@ -117,9 +128,25 @@
       <div id="twitch" onclick="navigate(this.id)" class="social">
         <span class="icon twitch"><i class="fab fa-twitch"></i></span>
       </div>
-      <!-- End youtube Icon -->
+      <!-- End twitch Icon -->
 
+      <!-- Start discord Icon -->
+      <div id="discord" onclick="navigate(this.id)" class="social">
+        <span class="icon discord"><i class="fa-brands fa-discord"></i></span>
+      </div>
+      <!-- End discord Icon -->
 
+      <!-- Start github Icon -->
+      <div id="github" onclick="navigate(this.id)" class="social">
+        <span class="icon github"><i class="fa-brands fa-github"></i></span>
+      </div>
+      <!-- End github Icon -->   
+
+      <!-- Start bluesky Icon -->
+      <div id="bluesky" onclick="navigate(this.id)" class="social">
+        <span class="icon bluesky"><i class="fa-brands fa-bluesky"></i></span>
+      </div>
+      <!-- End bluesky Icon -->   
     </div>
 
 
@@ -165,7 +192,16 @@
           window.open("https://web.telegram.org/", '_blank').focus(); //Add the url to your telegram account
         }
         else if (id === "twitch") {
-          window.open("https://web.telegram.org/", '_blank').focus(); //Add the url to your twitch account
+          window.open("https://twitch.tv/", '_blank').focus(); //Add the url to your twitch account
+        }
+        else if (id === "discord") {
+          window.open("https://discord.com", '_blank').focus(); //Add the url to your twitch account
+        }
+        else if (id === "github") {
+          window.open("https://github.com", '_blank').focus(); //Add the url to your twitch account
+        }
+        else if (id === "bluesky") {
+          window.open("https://bsky.app/profile/soleesunny.bsky.social", '_blank').focus(); //Add the url to your twitch account
         }
       }
 
